@@ -64,7 +64,6 @@
     </build>
     
     <modules>
-        <module>test-jpa-ds</module>
         <module>test-jpa-entities</module>
 		<module>test-jpa-service</module>
         <module>test-jpa-cmd</module>
