@@ -1,6 +1,3 @@
-/*
- * © 1996-2014 Sopra HR Software. All rights reserved
- */
 package com.dutertry.test.karaf.jpa.cmd;
 
 import java.util.List;

@@ -8,10 +8,10 @@
     <jpa:enable/>
     <tx:enable/>
     
-    <bean id="deleteManager" class="com.dutertry.test.karaf.jpa.service.impl.DeleteManager"/>
+    <bean id="testRepository" class="com.dutertry.test.karaf.jpa.service.impl.TestRepository"/>
     
     <bean id="testService" class="com.dutertry.test.karaf.jpa.service.impl.TestServiceImpl">
-        <property name="deleteManager" ref="deleteManager"/>
+        <property name="testRepository" ref="testRepository"/>
     </bean>
     
     <service interface="com.dutertry.test.karaf.jpa.service.TestService" ref="testService"/>

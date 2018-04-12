@@ -3,16 +3,15 @@
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.3.0 http://karaf.apache.org/xmlns/features/v1.3.0">
 
-    <!-- POC DSN -->
     <feature name="test-jpa" version="1.0.0" description="Test JPA">
+        <feature>aries-blueprint</feature>
         <feature>jndi</feature>
         <feature>transaction</feature>        
         <feature>pax-jdbc-h2</feature>
         <feature>pax-jdbc-config</feature>
         <feature>pax-jdbc-pool-dbcp2</feature>
         <feature>jpa</feature>
-        <feature version="[4.3.0,4.4.0)">hibernate</feature>
-        <bundle start-level="30">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.cglib/3.0_1</bundle>
+        <feature>hibernate</feature>
         <bundle>mvn:commons-lang/commons-lang/2.6</bundle>
         <bundle>mvn:commons-collections/commons-collections/3.2.1</bundle>
         <bundle start-level="80">mvn:com.dutertry.test.karaf.jpa/test-jpa-entities/${project.version}</bundle>
