@@ -8,6 +8,7 @@
     <jpa:enable/>
     <tx:enable/>
     
+    <!-- This bean contains a @PersistenceContext EntityManager -->
     <bean id="testRepository" class="com.dutertry.test.karaf.jpa.service.impl.TestRepository"/>
     
     <bean id="testService" class="com.dutertry.test.karaf.jpa.service.impl.TestServiceImpl">
