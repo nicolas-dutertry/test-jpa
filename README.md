@@ -11,6 +11,8 @@ mvn install
 
 Launch Karaf 4.2.0 and install the project kar :
 ```sh
+karaf@root()> feature:install jpa transaction hibernate jdbc pax-jdbc-hsqldb
+karaf@root()> jdbc:ds-create -dn hsqldb -url "jdbc:hsqldb:mem:testdb" -u sa jdbc/testdb
 karaf@root()> kar:install mvn:com.dutertry.test.karaf.jpa/test-jpa-kar/1.0.0-SNAPSHOT/kar
 ```
 
